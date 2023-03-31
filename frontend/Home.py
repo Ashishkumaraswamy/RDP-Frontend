@@ -13,5 +13,10 @@ with open('frontend\style.css')as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-st.title('Recruitment Data Platform')
-st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: #014b94 ;font-size:30px'>TEAM MEMBERS</h2><hr>",
+            unsafe_allow_html=True)
+
+team_members = {'Roll No':['19PD06','19PD07','19PD21','19PD22','19PD27'], 'Name':['Ashish K','Bala Vignesh SM','Maadhav K','Mohammed Hafiz','Hariharan S']}
+team_members = pd.DataFrame(team_members)
+st.table(team_members)
+
