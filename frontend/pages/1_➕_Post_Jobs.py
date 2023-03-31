@@ -10,9 +10,6 @@ st.set_page_config(page_title='Recruitment Data Platform',
 
 st.markdown("<h1 style='text-align: center; color: #014b94 ;font-size:50px'>RECRUITMENT DATA PLATFORM</h1>",
             unsafe_allow_html=True)
-# Style
-with open('frontend\style.css')as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 requirements_list = ['Python', 'Java', 'C++', 'AWS',
                      'Docker', 'Power BI', 'Jenkins', 'Kubernetes', 'C#', 'DBMS']
